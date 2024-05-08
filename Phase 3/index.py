@@ -5,9 +5,9 @@ from mysql.connector import Error
 def schedule_game(away_team_id, home_team_id, date):
     try:
         connection = mysql.connector.connect(host='localhost',
-                                             database='Baseball_League',
-                                             user='root',
-                                             password='903685aA!')
+                                             database='',
+                                             user='',
+                                             password='')
 
         if connection.is_connected():
             cursor = connection.cursor()
@@ -35,9 +35,9 @@ def schedule_game(away_team_id, home_team_id, date):
 def lookup_player_salary(player_id):
     try:
         connection = mysql.connector.connect(host='localhost',
-                                             database='Baseball_League',
-                                             user='root',
-                                             password='903685aA!')
+                                             database='',
+                                             user='',
+                                             password='')
 
         if connection.is_connected():
             cursor = connection.cursor()
@@ -64,9 +64,9 @@ def lookup_player_salary(player_id):
 def lookup_umpires_for_game(game_id):
     try:
         connection = mysql.connector.connect(host='localhost',
-                                             database='Baseball_League',
-                                             user='root',
-                                             password='903685aA!')
+                                             database='',
+                                             user='',
+                                             password='')
 
         if connection.is_connected():
             cursor = connection.cursor()
